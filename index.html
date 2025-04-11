@@ -6,6 +6,7 @@
   <title>Peace of Mind for Digital Nomads</title>
   <meta name="description" content="Protection for digital nomads, remote workers, and expats. Help us shape the future by filling out our quick survey.">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
    <!-- Microsoft Clarity Embed Placeholder -->
    <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -66,15 +67,16 @@
   </header>
 
   <div class="survey-container">
-    <!-- Tally Embed Placeholder -->
-    <iframe data-tally-src="https://tally.so/embed/wAQLx0?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="297" frameborder="0" marginheight="0" marginwidth="0" title="Test form"></iframe>
-<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+    <button id="toggle-survey" class="toggle-button">Show Survey</button>
+    <div id="survey-form" class="hidden">
+      <iframe data-tally-src="https://tally.so/embed/wAQLx0?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="297" frameborder="0" marginheight="0" marginwidth="0" title="Test form"></iframe>
+    </div>
   </div>
 
   <footer>
     &copy; 2025 Your Startup Name. All rights reserved.
   </footer>
 
- 
+  <script src="index.js"></script>
 </body>
 </html>
