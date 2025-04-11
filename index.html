@@ -7,6 +7,7 @@
   <meta name="description" content="Protection for digital nomads, remote workers, and expats. Help us shape the future by filling out our quick survey.">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
   <link rel="stylesheet" href="styles.css">
+  <script src="index.js" defer></script>
    <!-- Microsoft Clarity Embed Placeholder -->
    <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -61,22 +62,45 @@
   </style>
 </head>
 <body>
-  <header>
+  <header class="hero">
     <h1>Peace of Mind, Wherever You Roam</h1>
-    <p>We're building flexible protection plans for digital nomads, remote workers, and expats. Tell us what you need most by filling out this short survey.</p>
+    <p>Flexible protection plans for digital nomads, remote workers, and expats. Tell us what you need most by filling out this short survey.</p>
+    <button id="toggle-survey" class="cta-button">Get Started</button>
   </header>
 
-  <div class="survey-container">
-    <button id="toggle-survey" class="toggle-button">Show Survey</button>
-    <div id="survey-form" class="hidden">
-      <iframe data-tally-src="https://tally.so/embed/wAQLx0?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="297" frameborder="0" marginheight="0" marginwidth="0" title="Test form"></iframe>
-    </div>
+  <div class="survey-container hidden" id="survey-form">
+    <iframe data-tally-src="https://tally.so/embed/wAQLx0?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="297" frameborder="0" marginheight="0" marginwidth="0" title="Test form"></iframe>
   </div>
 
-  <footer>
-    &copy; 2025 Your Startup Name. All rights reserved.
-  </footer>
+  <section class="features">
+    <h2>Why Choose Us?</h2>
+    <div class="feature">
+      <h3>Flexible Plans</h3>
+      <p>Our plans are tailored to fit your unique lifestyle as a digital nomad.</p>
+    </div>
+    <div class="feature">
+      <h3>Global Coverage</h3>
+      <p>Enjoy peace of mind with coverage that travels with you, no matter where you go.</p>
+    </div>
+    <div class="feature">
+      <h3>24/7 Support</h3>
+      <p>Our dedicated support team is available around the clock to assist you.</p>
+    </div>
+  </section>
 
-  <script src="index.js"></script>
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <blockquote>
+      <p>"This service has changed my life! I feel secure wherever I go." - Alex, Digital Nomad</p>
+    </blockquote>
+    <blockquote>
+      <p>"The flexibility of the plans is unmatched. Highly recommend!" - Jamie, Remote Worker</p>
+    </blockquote>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Startup Name. All rights reserved.</p>
+    <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+  </footer>
 </body>
 </html>
